@@ -1,4 +1,4 @@
-FROM docker.schibsted.se/go
+FROM docker.schibsted.se/go:alpine
 
 # Create app dir
 RUN mkdir /scores
@@ -12,4 +12,4 @@ WORKDIR /scores
 EXPOSE 8000
 
 # Run the application
-CMD ["make run"]
+CMD ["go", "run", "main.go", "models.go", "routes.go"]

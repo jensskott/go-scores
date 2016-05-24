@@ -12,7 +12,7 @@
 		var team = $team.val();
 		var board = $board.val();
 
-		var url = "http://scores.zduck.com/";
+		var url = "http://scores.schibsted.se/";
 		if (team) {
 			url += team + "/";
 		}
